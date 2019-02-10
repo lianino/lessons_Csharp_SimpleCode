@@ -5,29 +5,49 @@ namespace lessons_Csharp
 {
     class Program
     {
+        /*1)Написать программу, вычисляющую среднее арифметическое двух чисел
+          2)Введите три числа и вывилите на экран значение суммы и произведения этих чисел
+          3)Простой конвертер любой валюты
+         */
+
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Hello World!!!");
+            Console.WriteLine("Домашнее задание 1");
+            Console.WriteLine("Введите два числа:");
+           
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Первое число: " + a);
 
-            Console.WriteLine("Привет мир!!!");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Второе число: " + b);
 
+            double result =(double) (a + b) / 2;
+            Console.WriteLine("Среднее арифметическое двух чисел равно " + result);
 
-            string data;
+            Console.WriteLine();
+            Console.WriteLine("Домашнее задание 2");
+            Console.WriteLine("Введите три числа:");
 
-            data = Console.ReadLine();
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Первое число: " + a);
 
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Второе число: " + b);
 
-            Console.WriteLine("Привет " + data + "!!!");*/
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Третье число: " + c);
 
-            string str = "5";
+            int result2 = a + b + c;
+            int result3 = a * b * c;
+            Console.WriteLine("Сумма введеных трех чисел равна " + result2 + ", а произведение равно " + result3);
 
-            int a = Convert.ToInt32(str);
+            Console.WriteLine();
+            Console.WriteLine("Домашнее задание 3");
+            Console.WriteLine("Конвертор рубли в доллары:");
+            double RUB = Convert.ToDouble(Console.ReadLine());
+            result = RUB/65.46;
+            Console.WriteLine(RUB + "руб - " + result.ToString("#.##") + "$" );
 
-            string str2 = "2";
-
-            int b = Convert.ToInt32(str2);
-
-            Console.WriteLine(a + b);
         }
     }
 }
