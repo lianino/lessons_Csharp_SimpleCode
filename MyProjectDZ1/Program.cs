@@ -11,13 +11,13 @@ namespace MyProjectDZ1
             Console.WriteLine("Домашнее задание 1");
             Console.WriteLine("Введите два числа:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Первое число: " + a);
+            double firstValue = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Первое число: " + firstValue);
 
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Второе число: " + b);
+            double secondValue = Convert.ToDouble(Console.ReadLine()); // либо double.Parse
+            Console.WriteLine("Второе число: " + secondValue);
 
-            double result = (double)(a + b) / 2;
+            double result = (firstValue + secondValue) / 2;
             Console.WriteLine("Среднее арифметическое двух чисел равно " + result);
         }
     }

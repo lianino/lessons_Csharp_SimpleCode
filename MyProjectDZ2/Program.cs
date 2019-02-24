@@ -10,20 +10,22 @@ namespace MyProjectDZ2
         static void Main(string[] args)
         {
             Console.WriteLine("Домашнее задание 2");
-            Console.WriteLine("Введите три числа:");
 
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Первое число: " + a);
+            double firstValue, secondValue, thirdValue;
 
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Второе число: " + b);
+            Console.WriteLine("Введите число 1");
+            firstValue = double.Parse(Console.ReadLine());
 
-            int c = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Третье число: " + c);
+            Console.WriteLine("Введите число 2");
+            secondValue = double.Parse(Console.ReadLine());
 
-            int result2 = a + b + c;
-            int result3 = a * b * c;
-            Console.WriteLine("Сумма введеных трех чисел равна " + result2 + ", а произведение равно " + result3);
+            Console.WriteLine("Введите число 3");
+            thirdValue = double.Parse(Console.ReadLine());
+
+
+            double sumResult = firstValue + secondValue + thirdValue;
+            double multRezult = firstValue * secondValue * thirdValue;
+            Console.WriteLine("Сумма введеных трех чисел равна " + sumResult + ", а произведение равно " + multRezult);
         }
     }
 }
